@@ -40,11 +40,25 @@ export default function TodoList() {
 				{todos.filter(filterTodo).length ? (
 					todos.filter(filterTodo).map((todo) => (
 						<TableRow key={todo.id} className="border-t border-slate-50">
-							<TableCell>{todo.title}</TableCell>
-							<TableCell>{todo.description}</TableCell>
 							<TableCell
 								className={`${
-									todo.status === "completed"?"text-sky-500":"text-yellow-600"
+									todo.status === "completed" ? "line-through" : ""
+								}`}
+							>
+								{todo.title}
+							</TableCell>
+							<TableCell
+								className={`${
+									todo.status === "completed" ? "line-through" : ""
+								}`}
+							>
+								{todo.description}
+							</TableCell>
+							<TableCell
+								className={`${
+									todo.status === "completed"
+										? "text-sky-500"
+										: "text-yellow-600"
 								}`}
 							>
 								{todo.status}
