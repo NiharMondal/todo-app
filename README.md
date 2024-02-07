@@ -22,6 +22,19 @@
 - Edit todo
 - Delete todo
 
+
+## State Management
+- Redux Toolkit     
+
+
+
+
 **Extra features**
 - Filter todo acording there priority
 - Check Todo Report 
+
+
+
+### Styling
+- TailwindCSS
+- Shadcn UI
